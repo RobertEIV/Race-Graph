@@ -8,13 +8,13 @@
 public class Word implements WordInterface
 {
     
-    private String word;
-    double Lscore,Wscore,Bscore,Ascore;
+    public String word;
+    double Ascore,Bscore,Lscore,Wscore;
     double[] scores;
     
-    public Word(String word, double l, double w, double b, double a){
+    public Word(String word, double a, double b, double l, double w){
      this.word = word;
-     Lscore =l; Wscore=w;Bscore=b;Ascore=a;   
+     Ascore=a; Bscore=b; Lscore =l; Wscore=w;   
      scores = new double[4];
     }
 

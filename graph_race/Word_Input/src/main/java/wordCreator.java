@@ -7,14 +7,14 @@
  */
 public class wordCreator
 {
-    double Lscore,Wscore,Bscore,Ascore;
+    double Ascore,Bscore,Lscore,Wscore;
     WordSim sim = new WordSim();
     public Word makeWord(String s){
         Lscore = sim.cosSimL(s);
         Wscore = sim.cosSimW(s);
-        Bscore = sim.cosSimW(s);
-        Ascore = sim.cosSimW(s);
-        Word word = new Word(s,Lscore,Wscore,Bscore,Ascore);
+        Bscore = sim.cosSimB(s);
+        Ascore = sim.cosSimA(s);
+        Word word = new Word(s,Ascore,Bscore,Lscore,Wscore);
         
         double[] scores = new double[4];
         scores[0] = Ascore;

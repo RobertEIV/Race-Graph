@@ -8,9 +8,10 @@ public class WordCreatorTest extends wordCreator{
 
     @Test
     public void testMakeWord(){
+        wordCreator wc = new wordCreator();
 	String s = "college";
-	Word w = makeWord(s);
-	System.out.println("scores for college: " + w.getScores();
+	Word w = wc.makeWord(s);
+	System.out.println("scores for college: " + w.getScores());
     }
 
 }

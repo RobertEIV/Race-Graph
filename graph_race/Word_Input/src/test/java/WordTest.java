@@ -14,6 +14,7 @@ public class WordTest extends Word{
 	System.out.println("should print out college and prints out: " + w);
     }
 
+    @Test
     public void testGetScores(){
 	wordCreator wc = new wordCreator();
 	String s = "college";
